@@ -92,11 +92,11 @@
     <br>
     <label for="URL">Paste Youtube URL Here</label>
     <br>
-    <input type="text" name="URL" placeholder="https://www.youtube.com/watch?v=YwCUEHoG4xk" id="youtubelink">
+    <input type="text" name="URL" id="youtubelink">
     <br>
     <button id="download">Convert</button>
     <br>
-    <audio id="audio" autoplay controls="controls"></audio>
+    <audio id="audio" autoplay controls></audio>
     <br>
     <button id="downloadmp3">Download</button>
     <br>
@@ -109,6 +109,7 @@
           converter(youtubelink, audio_tag);
         });
       });
+
         $("#downloadmp3").click(function(){
             var audio = document.getElementById("audio");
             var blob = new Blob([audio.src], {type: "audio/mpeg"});
