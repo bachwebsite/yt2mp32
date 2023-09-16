@@ -112,7 +112,7 @@
 
         $("#downloadmp3").click(function(){
             var audio = document.getElementById("audio");
-            var blob = new Blob([audio.src], {type: "audio/mpeg"});
+            var blob = new Blob([audio.src], {type: "audio/mp3"});
             var url = URL.createObjectURL(blob);
             var a = document.createElement("a");
             a.href = url;
