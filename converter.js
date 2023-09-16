@@ -48,13 +48,13 @@ function converter(youtubelink, audio_tag){
                 quality = "256kbps";
                 break;
               case 249:
-                quality = "webm_l";
+                quality = "mp3_l";
                 break;
               case 250:
-                quality = "webm_m";
+                quality = "mp3_m";
                 break;
               case 251:
-                quality = "webm_h";
+                quality = "mp3_h";
                 break;
             }
             if (quality) audio_streams[quality] = stream.url;
